@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'article',
     'homepage',
     'search',
+    'advert',
 ]
 
 MIDDLEWARE = [

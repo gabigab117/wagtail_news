@@ -17,4 +17,33 @@
         </div>
     </div>
 </div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-sm-12 justify-text mt-5 shadow-lg p-5 white">
+            {% with tags=page.tags.all %}
+            {% if tags %}
+            <div class="tags">
+                <h3>Tags</h3>
+                {% for tag in tags %}
+                <a href="{% slugurl 'tags' %}?tag={{ tag }}">
+                    <button type="button">{{ tag }}</button>
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-sm-12 justify-text mt-5 shadow-lg p-5 white">
+            <p>{{ page.advert.name }}</p>
+            <p>{{ page.advert.url }}</p>
+            <p>{{ page.advert.text }}</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
