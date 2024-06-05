@@ -37,6 +37,35 @@
     </div>
 </div>
 
+{% if comments %}
+<div class="container mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-sm-12 justify-text mt-5 shadow-lg p-5 white">
+            {% for comment in comments %}
+            <p>{{ comment.user }}</p>
+            <p>{{ comment.text }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-sm-12 justify-text mt-5 shadow-lg p-5 white">
+            <form method="post" action="{% pageurl page %}">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Envoyer">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
 <div class="container mt-5">
     <div class="row justify-content-center mb-5">
         <div class="col-md-8 col-sm-12 justify-text mt-5 shadow-lg p-5 white">
