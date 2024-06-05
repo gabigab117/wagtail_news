@@ -52,8 +52,8 @@
                 </li>
 
             </ul>
-            <form class="d-flex" action="">
-                <input class="form-control me-2" type="text" name="query" value="{{ search_query }}">
+            <form class="d-flex" action="{% url 'search:search' %}">
+                <input class="form-control me-2" type="text" name="query">
                 <input class="btn custom-btn" type="submit" value="Rechercher">
             </form>
         </div>
