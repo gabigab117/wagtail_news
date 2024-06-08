@@ -1,0 +1,9 @@
+[
+  {
+    "model": "homepage.indexpage",
+    "pk": 3,
+    "fields": {
+      "body": "<h2 data-block-key=\"m7ahs\">Bienvenu(e) sur Newspaper</h2><p data-block-key=\"6u26i\">C'est un site d'actualité</p><p data-block-key=\"5e5mr\"></p><hr/><p data-block-key=\"2dncq\">Bla bla</p><ul><li data-block-key=\"ca081\">Test</li><li data-block-key=\"ktm1\">Test 2</li></ul>"
+    }
+  }
+]
